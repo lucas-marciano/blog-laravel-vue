@@ -1,0 +1,328 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"de",
+				"deletar"
+			],
+			[
+				"null",
+				"null"
+			],
+			[
+				"unse",
+				"unset"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 496.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp64/www/sisgs-web/resources/views/atividades/abas/aba-second.blade.php",
+		"/C/wamp64/www/sisgs-web/resources/views/atividades/forms/form.blade.php",
+		"/C/wamp64/www/sisgs-web/resources/views/atividades/index.blade.php",
+		"/C/wamp64/www/blog/resources/assets/js/components/TabelaLista.vue",
+		"/C/wamp64/www/i9cidadao-web/app/Http/Controllers/RootController.php",
+		"/C/wamp64/www/i9cidadao-web/resources/views/root/index.blade.php",
+		"/C/wamp64/www/i9cidadao-web/resources/views/root/table.blade.php",
+		"/C/wamp64/www/blog/resources/views/admin/artigos/index.blade.php",
+		"/C/wamp64/www/blog/resources/assets/js/app.js",
+		"/C/wamp64/logs/php_error.log",
+		"/C/wamp64/www/blog/resources/assets/js/bootstrap.js",
+		"/C/wamp64/www/i9cidadao-web/node_modules/laravel-elixir-rollup-official/dist/RollupTask.js",
+		"/C/MobVipTouchWS/1/dados/fabricante.xml",
+		"/C/MobVipTouchWS/50/dados/fabricante.xml",
+		"/C/wamp64/www/blog/app/Http/Controllers/HomeController.php",
+		"/C/wamp64/www/sisgs-v3/app/Http/Controllers/AtividadesController.php",
+		"/C/wamp64/www/blog/resources/assets/js/components/Pagina.vue",
+		"/C/wamp64/www/blog/routes/web.php",
+		"/C/wamp64/www/blog/app/Http/Controllers/Admin/ArtigosController.php",
+		"/C/wamp64/www/blog/resources/assets/js/components/Example.vue",
+		"/C/wamp64/www/blog/resources/assets/js/components/Topo.vue",
+		"/C/wamp64/www/blog/resources/assets/js/components/Box.vue",
+		"/C/wamp64/www/blog/app/Http/Controllers/Controller.php",
+		"/C/Users/Viggo/AppData/Local/Temp/fz3temp-2/app.php",
+		"/C/Users/Viggo/AppData/Local/Temp/fz3temp-2/.env",
+		"/C/wamp64/www/i9cidadao-web/app/Http/Controllers/ReportsController.php",
+		"/C/wamp64/www/ajudantedeconsultorio-v2-web/app/Anexo.php",
+		"/C/wamp64/www/ajudantedeconsultorio-v2-web/app/Http/Controllers/ExameController.php",
+		"/C/wamp64/www/ajudantedeconsultorio-v2-web/app/Http/Controllers/ClinicaController.php",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/notification.html",
+		"/C/wamp64/www/i9cidadao-web/resources/views/preloads/notications.blade.php",
+		"/C/wamp64/www/i9cidadao-web/resources/assets/js/script.js",
+		"/C/wamp64/www/i9cidadao-web/resources/views/layouts/apps.blade.php",
+		"/C/wamp64/www/i9cidadao-web/gulpfile.js",
+		"/C/wamp64/www/i9cidadao-web/resources/assets/js/vendor/toastr/toastr.min.js",
+		"/C/wamp64/www/i9cidadao-web/resources/assets/js/app.js",
+		"/C/wamp64/www/i9cidadao-web/composer.json",
+		"/C/wamp64/www/i9cidadao-web/app/UtilHelper.php",
+		"/C/wamp64/www/i9cidadao-web/config/app.php",
+		"/C/wamp64/www/i9cidadao-web/app/ConstHelper.php",
+		"/C/wamp64/www/i9cidadao-web/app/UserHelper.php",
+		"/C/wamp64/www/blog/resources/views/home.blade.php",
+		"/C/wamp64/www/ajudantedeconsultorio-v2-web/resources/assets/js/script.js",
+		"/C/Users/Viggo/Desktop/indicador_efeito.sql",
+		"/C/Users/Viggo/Desktop/meio_verificacao.sql",
+		"/C/Users/Viggo/Desktop/atividade.sql",
+		"/C/Users/Viggo/Desktop/acao_valor.sql",
+		"/C/Users/Viggo/Desktop/familha_acompanhada.sql",
+		"/C/Users/Viggo/Desktop/objetivo_especifico.sql",
+		"/C/Users/Viggo/Desktop/tipo_atividade.sql",
+		"/C/Users/Viggo/Desktop/atividade_planejada.sql",
+		"/C/Users/Viggo/Desktop/acao.sql",
+		"/C/Users/Viggo/Desktop/eixo_tematico.sql",
+		"/C/Users/Viggo/Desktop/linha_acao.sql",
+		"/C/Users/Viggo/Desktop/usuario.sql",
+		"/C/Users/Viggo/Desktop/users.sql",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/extra/httpd-vhosts.conf",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
+		"/C/wamp64/bin/apache/apache2.4.23/bin/php.ini",
+		"/C/Users/Viggo/Desktop/select_pedido_com_nota.sql",
+		"/C/Users/Viggo/Desktop/select_pedido_sem_nota.sql",
+		"/C/Users/Viggo/Desktop/funcao_calculo_aliquota.sql",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/form-pickers.html",
+		"/C/Users/Viggo/Desktop/Cubic/plugins/components/bootstrap-datepicker/bootstrap-datepicker.min.css",
+		"/C/Users/Viggo/Desktop/Cubic/plugins/components/custom-select/custom-select.js",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/form-advanced.html",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/css/style.css",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/tabs.html",
+		"/C/Users/Viggo/Desktop/Cubic/plugins/components/fullcalendar/fullcalendar.css",
+		"/C/MobVipTouchWS/conf.properties",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/table-layouts.html",
+		"/C/Users/Viggo/Desktop/mobvip_login.sql",
+		"/C/wamp64/www/movip-login/assets/js/script.js",
+		"/C/wamp64/www/movip-login/assets/js/demo.js",
+		"/C/wamp64/www/movip-login/admin/_templates/clientes/index.php",
+		"/C/wamp64/www/i9cidadao-web/routes/web.php",
+		"/C/wamp64/www/i9cidadao-web/app/Http/Controllers/UserController.php",
+		"/C/wamp64/www/i9cidadao-web/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/wamp64/www/i9cidadao-web/.env",
+		"/C/wamp64/www/movip-login/admin/painel.php",
+		"/C/wamp64/www/i9cidadao-web/app/Http/ViewComposer/TrackTipoComposer.php",
+		"/C/wamp64/www/i9cidadao-web/app/Providers/TipoUsuarioServiceProvider.php",
+		"/C/wamp64/www/i9cidadao-web/app/Http/Controllers/PerfilController.php",
+		"/C/wamp64/www/i9cidadao-web/resources/views/usuarios/index.blade.php",
+		"/C/wamp64/www/i9cidadao-web/package.json",
+		"/C/wamp64/www/i9cidadao-web/resources/assets/sass/vendor/sweetalert2/_sweetalert2.scss",
+		"//192.168.4.4/Desenvolvimento/Arquivos Pessoais/Antunes/CRMs/CRM_15125/script_para_web_FINAL.sql",
+		"/C/wamp64/www/ajudantedeconsultorio-app/package.json",
+		"/C/wamp64/www/ajudantedeconsultorio-app/.gitignore",
+		"/C/wamp64/www/ajudantedeconsultorio-app/vendor/autoload.php",
+		"/C/wamp64/www/ajudantedeconsultorio-app/error_log",
+		"/C/wamp64/www/i9cidadao-web/resources/views/departamentos/form.blade.php",
+		"/C/wamp64/www/i9cidadao-web/resources/views/departamentos/index.blade.php",
+		"/C/wamp64/www/i9cidadao-web/resources/views/departamentos/editar.blade.php",
+		"/C/wamp64/www/i9cidadao-web/app/Http/Controllers/DepartamentoController.php",
+		"/C/wamp64/www/blog/.env",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/form-upload.html",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-minisidebar/data-table.html",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/widgets.html",
+		"/C/Users/Viggo/Desktop/estados.json",
+		"/C/Users/Viggo/Documents/AndroidProjects/i9cidadao-app/app/src/main/assets/cidades.json",
+		"/C/Users/Viggo/Desktop/cidades.json",
+		"/C/Users/Viggo/Documents/AndroidProjects/i9cidadao-app/app/src/main/assets/estados.json",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-html/data-table.html",
+		"/C/Users/Viggo/Desktop/trackcity-db.sql",
+		"/C/Users/Viggo/Desktop/reclamacoes.sql",
+		"/C/Users/Viggo/Desktop/sugestoes.sql",
+		"/C/wamp64/www/controle-web/resources/views/auth/passwords/reset.blade.php",
+		"/C/wamp64/www/controle-web/resources/views/auth/passwords/email.blade.php",
+		"/C/wamp64/www/controle-web/resources/views/auth/login.blade.php",
+		"/C/wamp64/www/controle-web/resources/views/auth/register.blade.php",
+		"/C/Users/Viggo/AppData/Local/Temp/fz3temp-2/digitalocean",
+		"/C/Users/Viggo/AppData/Local/Temp/fz3temp-2/i9cidadao",
+		"/C/Users/Viggo/AppData/Local/Temp/fz3temp-2/default",
+		"/C/wamp64/www/AwesomeProject/App.js",
+		"/C/wamp64/www/controle-web/gulpfile.js",
+		"/C/wamp64/www/controle-web/package.json",
+		"/C/wamp64/www/controle-web/composer.json",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-minisidebar/blank.html",
+		"/C/Users/Viggo/Desktop/Cubic/cubic-minisidebar/animation.html",
+		"/C/wamp64/www/projeto-prova-web/resources/views/auth/register.blade.php",
+		"/C/wamp64/www/projeto-prova-web/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/wamp64/www/trackcity-web/i9cidadao-ws/json/save_img_profile.php",
+		"/C/wamp64/www/trackcity-web/i9cidadao-ws/json/save_request_picture.php",
+		"/C/wamp64/www/trackcity-web/i9cidadao-ws/json/save_request.php",
+		"/C/wamp64/www/trackcity-web/server.php",
+		"/C/wamp64/www/trackcity-web/gulpfile.js",
+		"/C/wamp64/www/trackcity-web/.env"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webpack.mix.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
