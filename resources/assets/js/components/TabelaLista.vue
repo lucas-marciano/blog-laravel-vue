@@ -16,16 +16,16 @@
             </thead>
             <tbody>
             <tr v-for="(item,index) in lista">
-                <td v-for="i in item">{{i}}</td>
+                <td v-for="i in item">{{i | formataData}}</td>
                 <td v-if="detalhe || editar || deletar">
-                    <form v-if="deletar && token" v-bind:action="deletar + item.id" method="post">
+                    <form v-bind:action="deletar + item.id" method="post">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="_token" v-bind:value="token">
                         <linkmodal v-if="criar && modal" v-bind:item="item" v-bind:url="detalhe" nomemodal="modal-show"
                                    acao="Detalhes" css="btn btn-warning"></linkmodal>
                         <linkmodal v-if="criar && modal" v-bind:item="item" v-bind:url="editar" nomemodal="modal-edit"
                                    acao="Editar" css="btn btn-info"></linkmodal>
-                        <button v-if="deletar || token" class="btn btn-danger">Excluir</button>
+                        <button v-if="deletar && token" class="btn btn-danger">Excluir</button>
                     </form>
                 </td>
             </tr>
@@ -55,6 +55,18 @@
                 }
             }
         },
+        filters:{
+            formataData: function (valor) {
+                if (!valor) return '';
+                valor = valor.toString();
+                if(valor.split('-').length === 3) {
+                    valor = valor.split('-');
+                    return valor[2] + '/' + valor[1] + '/' + valor[0];
+                }
+
+                return valor;
+            }
+        },
         computed: {
             lista: function () {
                 let lista = this.itens.data;
@@ -65,7 +77,7 @@
                 ordem = ordem.toLowerCase();
                 ordemCol = parseInt(ordemCol);
 
-                if (ordem == "asc") {
+                if (ordem === "asc") {
                     lista.sort(function (a, b) {
                         if (Object.values(a)[ordemCol] > Object.values(b)[ordemCol]) return 1;
                         if (Object.values(a)[ordemCol] < Object.values(b)[ordemCol]) return -1;

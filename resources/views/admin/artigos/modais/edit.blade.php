@@ -27,9 +27,18 @@
 		</div>
 
 		<div class="form-group">
-			<label for="conteudo">Conteúdo</label>
-			<textarea class="form-control" id="conteudo" name="conteudo" placeholder="Conteúdo"
-					  v-model="$store.state.item.conteudo"></textarea>
+			<label for="conteudo">Conteúdo *</label>
+			<ckeditor
+					name="conteudo"
+					v-model="$store.state.item.conteudo"
+					:config="{
+								toolbar: [
+								  [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript' ]
+								],
+								height: 200
+						  	}">
+			</ckeditor>
+
 		</div>
 
 	</formulario>

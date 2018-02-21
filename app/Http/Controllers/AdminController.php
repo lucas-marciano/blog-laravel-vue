@@ -6,7 +6,7 @@ use App\Artigo;
 use App\User;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class AdminController extends Controller
 {
 
     /**
@@ -21,10 +21,10 @@ class HomeController extends Controller
     	]); 
 
     	$cards = array();
-        $cards['usuarios'] = User::all()->count();
-//        $cards['categorias'] = User::all()->count();
-//        $cards['comentarios'] = User::all()->count();
-        $cards['artigos'] = Artigo::all()->count();
+        $cards['usuarios']        = User::all()->count();
+        $cards['autores']         = User::where('autor', 'S')->count();
+        $cards['administradores'] = User::where('isadmin', 'S')->count();
+        $cards['artigos']         = Artigo::all()->count();
 
         return view('home', compact('breadcrumbs', 'cards'));
     }

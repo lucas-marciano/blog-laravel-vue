@@ -13,14 +13,15 @@
                 </div>
 
                 <div class="col-lg-3">
-                    <box title="Categorias" url="{{ url('/') }}" color="bg-green" icon="fa-tags">
-                        100
+                    <box title="Autores" url="{{ route('autores.index') }}" color="bg-green" icon="fa-user">
+                        {{$cards['autores']}}
                     </box>
                 </div>
 
                 <div class="col-lg-3">
-                    <box title="Comentários" url="{{ url('/') }}" color="bg-blue" icon="fa-comments">
-                        300
+                    <box title="Administradores" url="{{ route('administradores.index') }}"
+                         color="bg-blue" icon="fa-user-secret">
+                        {{$cards['administradores'] }}
                     </box>
                 </div>
 

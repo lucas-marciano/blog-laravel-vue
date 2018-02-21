@@ -1,3 +1,73 @@
+html{
+  height: 100% !important;
+}
+
 [v-cloak] {
   display: none;
+}
+
+
+.navbar-collapse > .container .navbar-brand, .navbar > .container-fluid .navbar-brand,
+div#app-navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav.navbar-right > li > a{
+  color: black;
+  -webkit-transition: all 0.3s ease-out !important;
+  -moz-transition: all 0.3s ease-out !important;
+  -o-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
+}
+
+div#app-navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav.navbar-right > li:hover > a{
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.white-title{
+  color: white;
+  padding: 20px 0;
+}
+
+.main-text-login{
+  font-size: 5em;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(12, 11, 11, 0.4);
+  font-weight: bold;
+}
+.sub-text-login{
+  font-size: 1.3em;
+  color: #e3e3e3;
+  font-weight: 200;
+}
+
+.bg-login{
+  background: rgba(103, 116, 161, 0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer.footer {
+  left:0;
+  bottom:0;
+  height:30px;
+  width:100%;
+  color: white;
+}
+
+/* IE 6 */
+* html footer.footer {
+  position:absolute;
+  top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+.ar_in{
+  height: 100%;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.box-shadow{
+  -webkit-box-shadow: 6px 6px 6px -2px rgba(54,52,54,0.19);
+  -moz-box-shadow: 6px 6px 6px -2px rgba(54,52,54,0.19);
+  box-shadow: 6px 6px 6px -2px rgba(54,52,54,0.19);
 }

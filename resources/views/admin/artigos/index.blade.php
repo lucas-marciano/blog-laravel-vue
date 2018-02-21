@@ -17,11 +17,11 @@
 		<linkmodal nomemodal="modal-adicionar" acao="Novo artigo" css="btn btn-info"></linkmodal>
 
 		<tabela-lista criar="#criar" editar="/admin/artigos/" deletar="/admin/artigos/" detalhe="/admin/artigos/"
-					  token="{{ csrf_token() }}" v-bind:titulos="['#', 'Título', 'Descrição', 'Data', 'Hora']"
-		 v-bind:itens="{{json_encode($artigos)}}" ordem="asc" ordemcol="2" modal="sim"></tabela-lista>
+					  token="{{ csrf_token() }}" v-bind:titulos="['#', 'Título', 'Descrição', 'Autor', 'Data', 'Hora']"
+		 v-bind:itens="{{json_encode($lista)}}" ordem="desc" ordemcol="0" modal="sim"></tabela-lista>
 
 		<div align="center" class="">
-			{{$artigos}}
+			{{$lista}}
 		</div>
 	</painel>
 </pagina>

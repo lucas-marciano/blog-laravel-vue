@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-default navbar-static-top">
+  <nav v-bind:class="inverseNav">
       <div class="container">
           <div class="navbar-header">
 
@@ -12,7 +12,7 @@
               </button>
 
               <!-- Branding Image -->
-              <a class="navbar-brand" v-bind:href="url">
+              <a class="navbar-brand" v-bind:href="url" v-bind:style="setcolor">
                   {{ titulo }}
               </a>
           </div>
@@ -34,6 +34,20 @@
 
 <script>
     export default {
-        props: ['titulo', 'url']
+        props: ['titulo', 'url', 'classe', 'white'],
+        computed: {
+            inverseNav: function () {
+                if (this.classe) {
+                    return "navbar navbar-collapse navbar-static-top"
+                }
+                return "navbar navbar-default navbar-static-top";
+            },
+            setcolor: function () {
+                if(this.white)
+                    return 'color: white';
+                else
+                    return 'color: #777';
+            }
+        }
     }
 </script>

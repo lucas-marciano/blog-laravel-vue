@@ -16,12 +16,12 @@ class ArtigosController extends Controller
     public function index()
     {
         $breadcrumbs = json_encode([
-            ['titulo' => 'Home', 'url' => route('home')],
+            ['titulo' => 'Home', 'url' => route('admin')],
             ['titulo' => 'Artigos', 'url' => ''],
         ]);
 
-        $artigos = Artigo::select('id', 'titulo', 'descricao', 'data_publicacao', 'time_publicacao')->paginate(15);
-        return view('admin.artigos.index', compact('breadcrumbs', 'artigos'));
+        $lista = Artigo::listarArtigos(15);
+        return view('admin.artigos.index', compact('breadcrumbs', 'lista'));
     }
 
     /**
@@ -53,7 +53,6 @@ class ArtigosController extends Controller
         ]);
 
         if($validacao->fails()){
-            toast()->warning("Verifique se os campos foram preenchidos corretamente.", "Atenção");
             return redirect()->back()->withErrors($validacao)->withInput();
         }
 
@@ -103,7 +102,6 @@ class ArtigosController extends Controller
         ]);
 
         if($validacao->fails()){
-            toast()->warning("Verifique se os campos foram preenchidos corretamente.", "Atenção");
             return redirect()->back()->withErrors($validacao)->withInput();
         }
 

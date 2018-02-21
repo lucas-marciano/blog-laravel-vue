@@ -14,6 +14,8 @@ class CreateArtigosTable extends Migration
     public function up()
     {
         Schema::create('artigos', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
             $table->increments('id');
             $table->string('titulo');
             $table->string('descricao');

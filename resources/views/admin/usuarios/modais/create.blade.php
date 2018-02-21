@@ -16,6 +16,11 @@
 			<input type="password" class="form-control" id="password" name="password" value="">
 		</div>
 
+		<div class="form-group">
+			<label for="autor">Esse usuário é um autor?</label>
+			<input type="checkbox" id="autor" name="autor" {{old('autor') && old('autor') == 'S' ? 'checked' : ''}}>
+		</div>
+
 	</formulario>
 	<span slot="botoes">
 		<button form="form-add" type="submit" class="btn btn-primary">Salvar</button>

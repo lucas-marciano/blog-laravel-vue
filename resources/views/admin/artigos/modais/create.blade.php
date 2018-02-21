@@ -23,7 +23,18 @@
 
 		<div class="form-group">
 			<label for="conteudo">Conteúdo *</label>
-			<textarea style="resize: none;" class="form-control" id="conteudo" name="conteudo">{{old('conteudo')}}</textarea>
+			<ckeditor
+					id="conteudo"
+					name="conteudo"
+					value="{{old('conteudo')}}"
+					:config="{
+								toolbar: [
+								  [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript' ]
+								],
+								height: 200
+						  	}">
+			</ckeditor>
+
 		</div>
 
 	</formulario>

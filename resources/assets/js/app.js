@@ -46,6 +46,8 @@ Vue.component('modal', 			require('./components/modal/Modal.vue'));
 Vue.component('linkmodal', 		require('./components/modal/Link.vue'));
 Vue.component('formulario',     require('./components/Formulario.vue'));
 Vue.component('alerta',         require('./components/Alerts.vue'));
+Vue.component('artigo',         require('./components/ArtigoCard.vue'));
+Vue.component('ckeditor',       require('vue-ckeditor2'));
 
 const app = new Vue({
     el: '#app',

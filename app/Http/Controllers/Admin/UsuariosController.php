@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\User;
-use Grimthorr\LaravelToast\Toast;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use App\Http\Controllers\Controller;
 
 class UsuariosController extends Controller
@@ -17,8 +17,8 @@ class UsuariosController extends Controller
     public function index()
     {
         $breadcrumbs = json_encode([
-            ['titulo' => 'Home', 'url' => route('home')],
-            ['titulo' => 'Usuários', 'url' => ''],
+            ['titulo' => 'Home', 'url' => route('admin')],
+            ['titulo' => 'Autores', 'url' => ''],
         ]);
 
         $lista = User::select('id', 'name', 'email')->paginate(15);
@@ -43,13 +43,18 @@ class UsuariosController extends Controller
      */
     public function store(Request $request)
     {
+        if(isset($request->autor))
+            $request['autor'] = 'S';
+        else
+            $request['autor'] = 'N';
+
         $data = $request->all();
         $validacao = $this->validator($data);
 
         if($validacao->fails()){
-            toast()->warning("Verifique se os campos foram preenchidos corretamente.", "Atenção");
             return redirect()->back()->withErrors($validacao)->withInput();
         }
+
         $data['password'] = bcrypt($data['password']);
         User::create($data);
         toast()->success("Usuário criado com sucesso.", "Parabéns");
@@ -87,19 +92,36 @@ class UsuariosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = $request->all();
-        $validacao = $this->validator($data);
+        if(isset($request->autor))
+            $request['autor'] = 'S';
+        else
+            $request['autor'] = 'N';
 
-        if(trim($data['password']) != "")
+        $data = $request->all();
+
+        if(trim($data['password']) != "" && isset($data['password'])) {
+            $validacao = \Validator::make($data, [
+                'name' => 'required|string|max:255',
+                'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($id)],
+                'password' => 'required|string|min:6',
+            ]);
+
             $data['password'] = bcrypt($data['password']);
+        }else{
+            $validacao = \Validator::make($data, [
+                'name' => 'required|string|max:255',
+                'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($id)]
+            ]);
+
+            unset($data['password']);
+        }
 
         if($validacao->fails()){
-            toast()->warning("Verifique se os campos foram preenchidos corretamente.", "Atenção");
             return redirect()->back()->withErrors($validacao)->withInput();
         }
 
         User::find($id)->update($data);
-        toast()->success("Usuário editado com sucesso.", "Parabéns");
+        toast()->success("Autor editado com sucesso.", "Parabéns");
         return redirect()->back();
     }
 
@@ -112,7 +134,7 @@ class UsuariosController extends Controller
     public function destroy($id)
     {
         User::find($id)->delete();
-        toast()->success("Usuário apagado com sucesso.", "Parabéns");
+        toast()->success("Autor apagado com sucesso.", "Parabéns");
         return redirect()->back();
     }
 
